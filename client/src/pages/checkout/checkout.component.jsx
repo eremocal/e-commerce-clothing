@@ -38,7 +38,7 @@ const CheckoutPage = ({ cartItems, total }) => (
     ))}
 
     <TotalContainer>
-      <span>TOTAL: ${total}</span>
+      <span>TOTAL: ₱{total}</span>
     </TotalContainer>
     <TestWarningContainer>
       *Please use the following test credit cart for payments*

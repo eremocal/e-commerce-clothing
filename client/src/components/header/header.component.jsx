@@ -5,7 +5,7 @@ import CartDropDown from '../cart-dropdown/cart-dropdown.component';
 import { selectCartHidden } from '../../redux/cart/cart.selector';
 import { selectCurrentUser } from '../../redux/user/user.selector';
 import { signOutStart } from '../../redux/user/user.actions';
-import { ReactComponent as Logo } from '../../assets/4.2 crown.svg';
+import { ReactComponent as Logo } from '../../assets/shop.svg';
 import {
   HeaderContainer,
   LogoContainer,

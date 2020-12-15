@@ -16,7 +16,7 @@ const CollectionItem = ({ item, addItemToCart }) => {
       <CollectionItemImage className='image' imageUrl={imageUrl} />
       <CollectionFooterContainer>
         <NameContainer>{name}</NameContainer>
-        <PriceContainer>{price}</PriceContainer>
+        <PriceContainer>₱{price}</PriceContainer>
       </CollectionFooterContainer>
       <CollectionItemButton onClick={() => addItemToCart(item)} inverted>
         Add to cart
