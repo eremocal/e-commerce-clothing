@@ -55,11 +55,21 @@ export const CollectionFooterContainer = styled.div`
 export const NameContainer = styled.span`
   width: 85%;
   margin-bottom: 15px;
+
+  @media screen and (max-width: 400px) {
+    width: 80%;
+    font-size: 15px;
+  }
 `;
 
 export const PriceContainer = styled.span`
   width: 15%;
   text-align: right;
+
+  @media screen and (max-width: 400px) {
+    width: 20%;
+    font-size: 15px;
+  }
 `;
 
 export const CollectionItemButton = styled(CustomButton)`

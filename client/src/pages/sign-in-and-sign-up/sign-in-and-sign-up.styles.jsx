@@ -15,4 +15,8 @@ export const SignInAndSignUpContainer = styled.div`
       margin-bottom: 50px;
     }
   }
+
+  @media screen and (max-width: 400px) {
+    align-items: flex-start;
+  }
 `;
