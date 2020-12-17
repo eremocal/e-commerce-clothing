@@ -43,7 +43,7 @@ export function* signInWithEmail({ payload: { email, password } }) {
     const { user } = yield auth.signInWithEmailAndPassword(email, password);
     yield getSnapshotFromUserAuth(user);
   } catch (err) {
-    put(signInFailure(err));
+    put(signInFailure(alert('email and password do not match', err)));
   }
 }
 
@@ -69,7 +69,12 @@ export function* signOut() {
 export function* signUp({ payload: { email, password, displayName } }) {
   try {
     const { user } = yield auth.createUserWithEmailAndPassword(email, password);
-    yield put(signUpSuccess({ user, additionalData: { displayName } }));
+    yield put(
+      signUpSuccess(
+        { user, additionalData: { displayName } },
+        alert('You Have Successfuly signed up')
+      )
+    );
   } catch (err) {
     yield put(signUpFailure(err));
   }
